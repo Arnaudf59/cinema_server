@@ -1,0 +1,30 @@
+{
+  "name": "cinema_server",
+  "version": "1.0.0",
+  "description": "Cinema: </br>\r - Un film diffusé dans notre cinema a un nom et une durée (minutes)</br>\r - Un film appartient à une scéance sur une date données et sont diffusés dans une sale. </br>\r - Une salle dispose d'un numéro pour que nos clients puissent la retrouver facilement et d'un nombre de places assises\r - Enfin, le cinema à un nom",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arnaudf59/cinema_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arnaudf59/cinema_server/issues"
+  },
+  "homepage": "https://github.com/Arnaudf59/cinema_server#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/mongoose": "^5.11.97",
+    "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14"
+  }
+}
