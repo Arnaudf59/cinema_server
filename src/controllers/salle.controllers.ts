@@ -17,9 +17,7 @@ class SalleController {
         next();
     }
 
-    findByCinema = async (req, res, next) => {
-        let cinema_id = await Cinema.findById(req.params.id);
-    }
+    
 
     create = async (req, res, next) => {
         res.status(201)

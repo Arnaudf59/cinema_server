@@ -6,7 +6,8 @@ const cinemaSchema = new mongoose.Schema({
         type: String
     },
     salle : [{
-        type: mongoose.Schema.Types.ObjectId
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Salle"
     }]    
 })
 

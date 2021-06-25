@@ -10,7 +10,8 @@ const cinemaSchema = new mongoose_1.default.Schema({
         type: String
     },
     salle: [{
-            type: mongoose_1.default.Schema.Types.ObjectId
+            type: mongoose_1.default.Schema.Types.ObjectId,
+            ref: "Salle"
         }]
 });
 exports.Cinema = mongoose_1.default.model("Cinema", cinemaSchema);
