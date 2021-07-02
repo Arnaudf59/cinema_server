@@ -4,7 +4,7 @@ class CinemaController {
 
     findAll = async (req, res, next) => {
         res.status(200)
-           .send(await Cinema.find())
+           .send(await Cinema.find().populate('salles'))
            .end();
         next();
     }

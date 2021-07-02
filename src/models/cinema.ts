@@ -5,7 +5,7 @@ const cinemaSchema = new mongoose.Schema({
     nom : {
         type: String
     },
-    salle : [{
+    salles : [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "Salle"
     }]    

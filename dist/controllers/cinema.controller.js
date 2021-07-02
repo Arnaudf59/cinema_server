@@ -15,7 +15,7 @@ class CinemaController {
     constructor() {
         this.findAll = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             res.status(200)
-                .send(yield cinema_1.Cinema.find())
+                .send(yield cinema_1.Cinema.find().populate('salles'))
                 .end();
             next();
         });

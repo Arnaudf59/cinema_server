@@ -10,9 +10,11 @@ const filmRoutes_1 = require("./routes/filmRoutes");
 const cinemaRoutes_1 = require("./routes/cinemaRoutes");
 const seanceRoutes_1 = require("./routes/seanceRoutes");
 const salleRoutes_1 = require("./routes/salleRoutes");
+const cors_1 = __importDefault(require("cors"));
 const app = express_1.default();
-const port = 4200;
+const port = 3000;
 app.use(express_1.default.json());
+app.use(cors_1.default());
 app.listen(port, () => {
     console.log(colors_1.default.green(`Serveur ecoute sur le port :`) + colors_1.default.yellow(`${port}`));
 });
