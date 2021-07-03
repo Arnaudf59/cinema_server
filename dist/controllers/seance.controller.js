@@ -40,7 +40,6 @@ class SeanceController {
             next();
         });
         this.findSeanceByFilmsAndCinema = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
-            let firstRequest = yield seance_1.Seance.find({ "cinema": `${req.params.id}`, "film": `${req.params.idfilm}` }).distinct("cinema");
             res.status(200)
                 .send(yield seance_1.Seance.find({ "cinema": `${req.params.id}`, "film": `${req.params.idfilm}` }))
                 .end();
