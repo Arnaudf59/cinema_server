@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import { Seance } from './seance';
 
 const ticketSchema = new mongoose.Schema({
     seance : {
